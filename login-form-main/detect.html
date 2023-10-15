@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detct</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<body>
+
+    <!-- nav section -->
+    <nav class="m-12">
+        <div class="navbar  lg:bg-[#F85559] md:bg-[#F85559] rounded-full p-8 max-w-screen-xl mx-auto ">
+            <div class="navbar-start  ">
+
+                <!-- nav bar for large screen -->
+
+                <div class=" hidden md:flex lg:flex text-lg text-white  ">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="index2.html">Home</a></li>
+                        <li><a href="detect.html">Detect Cancer </a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sm:navbar-start lg:navbar-center ">
+
+                <a class="btn btn-ghost normal-case text-2xl text-black lg:text-white font-bold lg:text-4xl">Breast Cancer Detection</a>
+            </div>
+            <div class="navbar-end pl-72">
+                <div class="dropdown lg:hidden md:hidden ">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a href="detect.html">Detect Cancer </a></li>
+                        <li><a>About</a></li>
+
+                    </ul>
+                </div>
+
+
+                <div class="relative hidden md:block">
+                    <input type="text" class="w-96 text-lg pr-10 pl-4 py-2 rounded-full border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent " placeholder="Search">
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class=" lg:flex justify-center gap-4 max-w-screen-xl mx-auto ">
+
+
+
+        <!-- card-1 -->
+        <!-- image upload -->
+
+        <div class="card w-96 bg-base-100 shadow-xl flex align-middle">
+            <figure class="px-10 pt-10 grid-cols-1">
+
+                <div>
+                    <div>
+                        <img src="images/banner.png" alt="Shoes" class="rounded-xl w-72 h-72 " id="profile_pic" />
+
+                    </div>
+                    <!-- input  -->
+
+                    <div class="form-control w-full max-w-xs">
+                        <label class="label">
+                       
+
+                    </label>
+                        <input type="file" id="input_file" accept="image/jpeg,image/png,image/jpg" class="input input-bordered w-full max-w-xs hidden" />
+                        <label class="label">
+             
+            </label>
+                    </div>
+                </div>
+            </figure>
+            <div class="card-body items-center text-center ">
+
+
+                <div class="card-actions ">
+                    <button class="btn btn-primary "> <label for="input_file">upload</label></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- result -->
+
+        <div class="card w-96 bg-base-100 shadow-xl flex align-middle">
+            <figure class="px-10 pt-10 grid-cols-1">
+
+                <div>
+
+                    <div class="mb-32">
+                        <h3> The result is positive</h3>
+
+                        <input type="text" placeholder="It will show the result" class="input input-bordered input-warning w-full max-w-xs" />
+
+
+                    </div>
+
+                    <div>
+                        <h3> The result is negative</h3>
+
+                        <input type="text" placeholder="It will show the result" class="input input-bordered input-warning w-full max-w-xs" />
+
+
+                    </div>
+                    <!-- input  -->
+
+                    <div class="form-control w-full max-w-xs">
+                        <label class="label">
+                       
+
+                    </label>
+                        <input type="file" id="input_file" accept="image/jpeg,image/png,image/jpg" class="input input-bordered w-full max-w-xs hidden" />
+                        <label class="label">
+             
+            </label>
+                    </div>
+                </div>
+            </figure>
+
+        </div>
+
+
+
+
+
+    </section>
+
+    <script>
+        const profilepic = document.getElementById("profile_pic");
+        const inputfile = document.getElementById("input_file");
+
+        inputfile.onchange = function() {
+            profilepic.src = URL.createObjectURL(inputfile.files[0]);
+        }
+    </script>
+
+</body>
+<footer class="footer  max-w-screen-xl mx-auto p-10 bg-base-200 text-base-content">
+    <nav>
+        <header class="footer-title">Services</header>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+    </nav>
+    <nav>
+        <header class="footer-title">Company</header>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+        <header class="footer-title">Legal</header>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+    </nav>
+    <form>
+        <header class="footer-title">Newsletter</header>
+        <fieldset class="form-control w-80">
+            <label class="label">
+          <span class="label-text">Enter your email address</span>
+        </label>
+            <div class="relative">
+                <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" />
+                <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+            </div>
+        </fieldset>
+    </form>
+</footer>
+
+</html>

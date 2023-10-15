@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detct</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<body>
+
+    <!-- nav section -->
+    <nav class="m-12">
+        <div class="navbar sm:grid-cols-1  lg:bg-[#F85559] md:bg-[#F85559] rounded-full p-8 max-w-screen-xl mx-auto ">
+            <div class="navbar-start  ">
+
+                <!-- nav bar for large screen -->
+
+                <div class=" hidden md:flex lg:flex text-lg text-white  ">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="index2.html">Home</a></li>
+                        <li><a href="detect.html">Detect Cancer </a></li>
+                        <li><a>About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sm:navbar-start lg:navbar-center ">
+
+                <a class="btn btn-ghost normal-case text-2xl text-black lg:text-white font-bold lg:text-4xl">Breast Cancer Detection</a>
+            </div>
+            <div class="navbar-end pl-72">
+                <div class="dropdown lg:hidden md:hidden ">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a href="detect.html">Detect Cancer </a></li>
+                        <li><a>About</a></li>
+
+                    </ul>
+                </div>
+
+
+                <div class="relative hidden md:block">
+                    <input type="text" class="w-96 text-lg pr-10 pl-4 py-2 rounded-full border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent " placeholder="Search">
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class=" lg:flex justify-center gap-4 max-w-screen-xl mx-auto mb-44">
+
+
+        <div class="mt-5">
+            <!-- The button to open modal -->
+            <label for="my_modal_6" class="btn">About US</label>
+
+
+            <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box">
+                    <h3 class="font-bold text-lg"></h3>
+                    <p class="py-4">Al Sabri Bhuiyan 1812098042 <br> Hadi Uzzaman 2022206642 <br> Ahmed Fahim 1921157042 <br></p>
+                    <div class="modal-action">
+                        <label for="my_modal_6" class="btn">Close!</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="mt-5">
+            <label for="my_modal_7" class="btn">Project Details</label>
+
+
+            <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box">
+                    <h3 class="font-bold text-lg"></h3>
+                    <p class="py-4"><label for="my_modal_7" class="btn">Breast cancer is the most common type of cancer that kills women around the world, and it is a big
+                        problem for healthcare systems. To improve survival rates and patient outcomes, it is crucial to find
+                        problems early and correctly. Traditional ways of diagnosing, like mammograms and biopsies, are
+                        effective, but they can take a long time, be painful, and make mistakes. This project proposes making and
+                        using a deep learning model, specifically a Convolutional Neural Network (CNN), to better and more
+                        quickly classify breast cancer.
+                        Artificial intelligence will be used in the proposed model to analyze histopathological images, which are
+                        microscopic pictures of living tissues. The model will be taught to tell the difference between benign and
+                        malignant tumors, which takes a lot of skill and precision. Training and testing will be done with a large
+                        set of breast cancer cases to make sure that a wide range of cases are looked at.
+                        The goal of the project is to make it faster and easier to find out if someone has breast cancer. By
+                        automating the analysis of histopathological images, the model could cut the time it takes to make a
+                        diagnosis by a large amount. This would make it possible to start treatment sooner. Also, by learning from
+                        a large set of data, the model might be able to match or even beat the accuracy of human experts, making
+                        it less likely that a wrong diagnosis will be made.
+                        The effects that this project could have are big. If it works, it could change the field of oncology by giving
+                        doctors a powerful, accurate tool for finding breast cancer early. This could lead to better outcomes for
+                        patients, better use of healthcare resources, and, in the long run, less breast cancer around the world.</label>
+
+
+                        <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+                        <div class="modal">
+                            <div class="modal-box">
+                                <h3 class="font-bold text-lg"></h3>
+                                <p class="py-4">hi </p>
+                                <div class="modal-action">
+                                    <label for="my_modal_7" class="btn">Close!</label>
+                                </div>
+                            </div>
+                        </div>
+                    </p>
+                    <div class="modal-action">
+                        <label for="my_modal_7" class="btn">Close!</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+
+
+</body>
+<footer class="footer  max-w-screen-xl mx-auto p-10 bg-base-200 text-base-content">
+    <nav>
+        <header class="footer-title">Services</header>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+    </nav>
+    <nav>
+        <header class="footer-title">Company</header>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+        <header class="footer-title">Legal</header>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+    </nav>
+    <form>
+        <header class="footer-title">Newsletter</header>
+        <fieldset class="form-control w-80">
+            <label class="label">
+          <span class="label-text">Enter your email address</span>
+        </label>
+            <div class="relative">
+                <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" />
+                <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+            </div>
+        </fieldset>
+    </form>
+</footer>
+
+</html>
